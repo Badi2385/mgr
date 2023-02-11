@@ -1,0 +1,21 @@
+app:
+  kafka:
+    group-id: group-3
+    bootstrap-servers: localhost:9091
+
+logging:
+  level:
+    root: info
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+payments:
+  url: localhost:8070/payments/
